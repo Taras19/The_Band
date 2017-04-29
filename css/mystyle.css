@@ -1,0 +1,1022 @@
+.main-page{
+	background:url("../img/main-page-bg.jpg") no-repeat right /cover;
+	position:relative;
+}
+.container-nav{
+	position:relative;
+	padding:2% 0;
+	z-index:100;
+	}
+.container-nav-fixed{
+	position:fixed;
+	width:100%;
+	background:rgba(204,204,204,.6);
+	transition:.5s;
+}
+.main-menu{
+	padding:0;
+	margin:0 0 0 10%;
+	list-style:none;
+}
+.main-menu__element{
+	float:left;
+	margin-right:30px;
+}
+.main-menu__element a{
+	color:#333300;
+	text-transform:uppercase;
+	font:bold 18px Lora;
+	text-decoration:none;
+	position:relative;
+}
+.main-menu__element a:hover::after{
+	content:"";
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	height:17px;
+	background:url("../img/main-menu__element-a.png") no-repeat left /cover;
+}
+.button{
+	display:none;
+	position:fixed;
+	width:40px;
+	height:40px;
+	background:transparent;
+	border:1px solid #333300;
+	border-radius:5px;
+	margin-left:40px;
+	padding:0;
+	outline:none;
+	z-index:100;
+	transition: linear .1s;
+}
+.line{
+	display: block;
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: #333300;
+    border: 1px solid white;
+}
+.line--top{
+	top: 5px;
+    left: 0;
+}
+.line--middle{
+	left: 0;
+    top: 50%;
+    margin-top: -3px;
+}
+.line--bottom{
+	left: 0;
+    bottom: 5px;
+}
+
+h1{
+	text-transform:uppercase;
+	font-family:Oswald;
+	font-weight:bold;
+	color:#333300;
+	font-size:100px;
+	text-align:center;
+	margin:17% 10% 18.4% 0;
+	float:right;
+}
+h1 span{
+	color:#cccccc;
+}
+.container-meet-band{
+	background:#F7F1F1;
+	padding-top:10%;
+	padding-bottom:10%;
+}
+.member-group{
+	float:left;
+	width:55%;
+	position:relative;
+	margin-right:1%;
+	margin-bottom:10px;
+}
+.member-group img{
+	max-width:100%;
+}
+.name-member{
+	position:absolute;
+	right:15%;
+	bottom:7%;
+	padding:10px;
+	text-transform: uppercase;
+    font-family: Oswald;
+    font-weight: bold;
+    color: #333300;
+    font-size: 45px;
+    text-align: center;
+}
+.name-member span{
+	color:#996666;
+}
+
+.member-instrument,
+.meet-with-member{
+	float:left;
+	width:44%;
+}
+.member-instrument{
+	text-align:center;
+	padding:120px 0;
+}
+.round{
+	display: inline-block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color:#999999;
+    border-radius: 50%;
+    margin: 0 12px;
+}
+.round--active{
+	background-color:#996666;
+}
+.round-container{
+	display:table;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 300px;
+    font-size: 0;
+    box-sizing: border-box;
+    
+}
+.name,
+.musical-instrument{
+	display:table-cell;
+    text-align:left;
+    height:28px;
+    vertical-align:middle;
+    padding:0 17px;
+    font:12px Lora;
+    color:#999999;
+    text-transform:uppercase;
+    width:150px;
+    box-sizing: border-box;
+}
+.name{
+	text-align:right;
+}
+
+
+.meet-with-member{
+	padding:15px;
+}
+.meet-with-member__title{
+	text-align:center;
+	margin:0 0 20px 0;
+	font: 36px Oswald;
+}
+.meet-with-member__text{
+	font: 18px Lora;
+	margin:0 0 15px;
+	padding:0 15px;
+}
+/*style for Discography*/
+.discography{
+	padding-top:5.26%;
+	padding-bottom:5.26%;
+}
+.discography-img{
+	display:block;
+	margin:auto;
+	height:200px;
+}
+.discography-title{
+	font:36px Oswald regular;
+	text-align:center;
+}
+.window{
+	height:200px;
+	overflow:auto;
+	margin-bottom:10px;
+}
+.list-album{
+	padding:0;
+	list-style:none;
+	margin-bottom:0;
+}
+.list-album__album{
+	padding: 10px 0 10px 10px;
+	font:30px Oswald light;
+	position:relative;
+}
+.album__title{
+	display: inline-block;
+    margin-right: 5%;
+    width: 235px;
+}
+.container-listen-buy{
+	position:absolute;
+	top:50%;
+	right:20px;
+	transform:translateY(-50%);
+	font-size:0;
+}
+.listen,
+a.album-buy{
+	display:inline-block;
+	padding:10px 15px;
+	background:#cccccc;
+	color:#996666;
+	font:18px Oswald regular;
+	cursor:pointer;
+}
+.listen:hover,
+.listen-active{
+	color:#ffffff;
+	background:#996666;
+}
+a.album-buy{
+	color:#ffffff;
+	background:#996666;
+	text-transform:uppercase;
+	margin-left:20px;
+	text-decoration:none;
+}
+a.album-buy:hover {
+    color: #996666;
+    background:#cccccc;
+    text-decoration: none;
+}
+
+
+/* style for music*/
+.now-playing{
+	font:36px Oswald regular;
+	padding: 0 10px;
+	margin-bottom:0;
+	margin-top:0;
+}
+.now-playing__album{
+	font:30px Oswald light;
+	padding: 0 10px;
+	margin:10px 0;
+	min-height:45px;
+}
+
+.now-playing__song{
+	font:18px Lora italic;
+	color:#996666;
+	padding:0 10px;
+	min-height:28px;
+}
+.now-playing__song__name{
+	float:left;
+	margin-right:20px;
+}
+
+.music-palayer{
+	width:200px;
+	margin:0 auto;
+	font-size:26px;
+	text-align:center;
+	position:relative;
+	overflow:hidden;
+}
+
+.sound__menu {
+    position:absolute;
+    top:0;
+    left:-160px;
+    width:160px;
+   	z-index:90;
+   	transition:all .2s;
+}
+.sound__menu--open{
+	left:0;
+	background:white;
+	transition:all .2s;
+}
+
+.fa-pause{
+	margin:0 15px;
+	cursor:pointer;
+}
+.pause--active,
+.fa-bars--active{
+	color:#996666;
+}
+.fa-bars,
+.fa-volume-off,
+.fa-volume-down,
+.fa-volume-up,
+.fa-fast-backward,
+.fa-backward,
+.fa-fast-forward,
+.fa-forward{
+	cursor:pointer;
+}
+.fa-bars:hover,
+.fa-volume-off:hover,
+.fa-volume-down:hover,
+.fa-volume-up:hover,
+.fa-pause:hover,
+.fa-fast-backward:hover,
+.fa-fast-forward:hover,
+.fa-backward:hover,
+.fa-forward:hover{
+	color:#996666;
+}
+
+
+.volume__display{
+	height:18px;
+	width:25px;
+	color:#996666;
+	cursor:pointer;
+}
+
+
+.fa-volume-off{
+	margin-bottom:0;
+}
+.parent{
+	display:block;
+	margin:35px auto;
+	height:10px;
+	width:200px;
+	border:1px solid black;
+	position:relative;
+	
+}
+.soon{
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%;
+	background:#996666;
+	transition:width .7s;
+}
+.song-list{
+	display:none;
+	list-style:none;
+	padding:0;
+	margin-bottom:0;
+	font:18px Lora italic;
+}
+.song-list--active{
+	display:block;
+	
+}
+.song{
+	position:relative;
+	border-bottom:1px dashed #996666;
+	padding:7px 0 7px 10px;
+	cursor:pointer;
+}
+.song--active{
+	color:#996666;
+}
+.song:hover{
+	color:#996666;
+}
+.fa-play{
+	margin-right:5%;
+	vertical-align:middle;
+}
+.song__name{
+	display:inline-block;
+	vertical-align:middle;
+}
+.song__time{
+	position:absolute;
+	right:5%;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+/*style for tour-dates*/
+
+.tour-dates{
+	background:#F7F1F1;
+	padding-top:4.21%;
+	padding-bottom:4.21%;
+}
+.tour-dates h3{
+	text-align:center;
+	font:36px Oswald;
+	color:#333300;
+	margin:0 0 6.14%;
+}
+.item{
+	overflow-x:auto;
+	overflow-y:hidden;
+}
+.horizontal__line{
+	min-width:1000px;
+	width:95%;
+	border-top:1px solid #999999;
+	text-align:center;
+	position:relative;
+	height:350px;
+	margin:10px auto 0;
+}
+.round-tour{
+	display: inline-block;
+    position: relative;
+    top:-8px;
+    width: 14px;
+    height: 14px;
+    background-color: #999999;
+    border-radius: 50%;
+    margin: 0 25px;
+   
+}
+.address__speech{
+	position:absolute;
+	width:350px;
+	text-align:right;
+	transform-origin:100% 50%;
+	transform:rotate(-90deg);
+	left: -345px;
+    top: 10px;
+    font:16px Lora bold;
+    color:#999999;
+}
+.active--performance{
+	color:#996666;
+}
+.round-tour--active{
+	background:#996666;
+}
+/*block of tickets for a concert*/
+.block-tickets{
+	padding:0 15px;
+	list-style:none;
+	height:224px;
+	overflow-y:auto;
+	margin-top:6.14%;
+}
+.performance{
+	display:none;
+	position:relative;
+	border-bottom:1px dotted #996666;
+	font-size:0;
+	padding:0 15px;
+}
+.performance:hover .address{
+	border-left:5px solid #996666;
+}
+.performance-active{
+	display:block;
+}
+.container-for-date{
+	display:inline-block;
+}
+.day{
+	display:inline-block;
+	margin-right:10px;
+	font-size:50px;
+}
+.month-and-year{
+	display:inline-block;
+	font-size:25px;
+	text-transform:uppercase;
+	vertical-align:bottom;
+}
+.month{
+	position:relative;
+	top:1px;
+	font-size:23px;
+}
+.year{
+	position:relative;
+	top:-8px;
+	font-size:23px;
+}
+.address{
+	position:absolute;
+	top:50%;
+	left:125px;
+	transform:translateY(-50%);
+	border-left:5px solid #999999;
+	font:30px normal;
+	padding:5px 15px;
+	
+}
+.buy-tickets{
+	position:absolute;
+	top:50%;
+	right:5%;
+	transform:translateY(-50%);
+	background:#996666;
+}
+.buy-tickets a{
+	padding:10px 20px;
+	text-transform:uppercase;
+	color:#ffffff;
+	font-size:18px;
+	text-decoration:none;
+}
+.buy-tickets a:hover{
+	color:#996666;
+	background:#F7F1F1;
+}
+/* style for contact-block*/
+.contact-block{
+	background:url("../img/footer-bg.jpg") no-repeat center bottom /cover;
+	text-align:center;
+	padding-top:9.21%;
+	padding-bottom:25.79%;
+
+}
+.contact-block__title{
+	text-transform:uppercase;
+	color:#333300;
+	font:36px Oswald bold;
+	margin-top:0;
+}
+.contact-block__tel{
+	padding:3.07% 6.30%;
+	border-bottom:1px dashed #cccccc;
+	font:36px Oswald bold;
+	color:#cccccc;
+	margin-bottom:30px;
+	text-decoration:none;
+	display:inline-block;
+}
+.contact-block__tel:focus, .contact-block__tel:hover {
+    color:#333300;
+    text-decoration: none;
+}
+.contact-block__form{
+	font-size:0;
+	display:inline-block;
+	margin-right:20px;
+	text-align:center;
+}
+.contact-block__subscribe{
+	background:#333300;
+	padding:0 15px;
+	font:36px Oswald bold;
+	color:#cccccc;
+	text-transform:uppercase;
+	border:none;
+	min-height:55px;
+	height:7vh;
+	max-height:75px;
+}
+.contact-block__email{
+	width:300px;
+	padding:0 2.63%;
+	border:5px solid #333300;
+	vertical-align:top;
+	font:16px Oswald bold;
+	color:#333300;
+	min-height:55px;
+	height:7vh;
+	max-height:75px;
+}
+.container-social{
+	display:inline-block;
+}
+.contact-block__facebook,
+.contact-block__youtube{
+	font-size:36px;
+	color:#333300;
+	margin-right:15px;
+}
+.contact-block__facebook:hover,
+.contact-block__youtube:hover{
+	text-decoration:none;
+	color:#cccccc;
+}
+a.contact-block__facebook:focus,
+a.contact-block__youtube:focus{
+	text-decoration:none;
+	color:#333300;
+}
+.contact-block__facebook{
+	margin-left:-4px;
+}
+
+
+/*style for futer*/
+.footer{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	text-align:center;
+	text-transform:uppercase;
+	font:18px Lora bold;
+	color:#cccccc;
+	padding:3.95% 15px;
+}
+body{
+	position:relative;
+}
+/*media for container-nav and button*/
+@media(max-width:550px){
+	.button{
+		display:block;
+		top:30px;
+	}
+	.button--open{
+		margin-left:190px;
+		transition: linear .1s;
+	}
+	.container-nav{
+		position:fixed;
+		margin-left:0;
+		top:0;
+		left:-150px;
+		padding:30px 0 0 30px;
+		width:150px;
+		height:100vh;
+		transition: linear .1s;
+		background:rgba(204,204,204,.8);
+	}
+	.container-nav--open{
+		left:0;
+		transition: linear .1s;
+	}
+	.main-menu__element{
+		margin-bottom:20px;
+	}
+}
+
+/*media for block-tickets*/
+@media (min-width:768px) and (max-width:991px){
+	
+    .buy-tickets {
+    	width:150px;
+    	position: static;
+    	margin:10px auto;
+    	transform:none;
+    	text-align:center;
+	}
+	.buy-tickets a{
+		display:block;
+	}
+	.address {
+		display:inline-block;
+    	position:relative;
+    	top: 10px;
+    	left:20px;
+    	vertical-align:top;
+    	transform:none;
+       }
+}
+@media(max-width:991px){
+	.meet-with-member__title{
+       	clear:both;
+    }
+
+}
+@media (min-width:768px) and (max-width:1100px){
+	h1{
+		font-size:80px;
+	}
+	.name-member {
+        right: 10%;
+        font-size: 35px;
+    }
+	.list-album__album{
+		font-size:25px;
+	}
+	.album__title {
+		width:200px;
+	}
+	.day {
+        font-size: 40px;
+	}
+	.month {
+        top: 4px;
+    	font-size: 20px;
+	}
+	.year {
+        top: -6px;
+    	font-size: 20px;
+	}
+	.address {
+        font: 24px normal;
+    
+	}
+	
+	.now-playing
+	{
+		text-align:center;
+	}
+	
+}
+
+/*media for min-width:660px and max-width-767px*/
+
+@media (min-width:660px) and (max-width:767px){
+	h1{
+		font-size:60px;
+	}
+	.name-member {
+        right: 10%;
+        font-size: 35px;
+    }
+    .list-album__album{
+		font-size:25px;
+	}
+	.album__title {
+		width:200px;
+	}
+	.buy-tickets {
+    	width:150px;
+    	position: static;
+    	margin:10px auto;
+    	transform:none;
+    	text-align:center;
+	}
+	.buy-tickets a{
+		display:block;
+	}
+	.address {
+		display:inline-block;
+    	position:relative;
+    	top: 10px;
+    	left:20px;
+    	vertical-align:top;
+    	transform:none;
+    	font: 24px normal;
+    }
+    .day {
+        font-size: 40px;
+	}
+	.month {
+        top: 4px;
+    	font-size: 20px;
+	}
+	.year {
+        top: -6px;
+    	font-size: 20px;
+	}
+	
+	.now-playing{
+		text-align:center;
+	}
+	.container-social{
+		display:block;
+		text-align:center;
+		margin-top:20px;
+	}
+
+}
+
+/*media for (min-width:500px) and  max-width-659px*/
+
+@media (min-width:500px) and (max-width:659px){
+	h1{
+		font-size:40px;
+	}
+	.name-member {
+        right: 5%;
+        font-size: 30px;
+    }
+    .meet-with-member__title{
+    	font-size:30px;
+    	clear:both;
+    }
+    .discography-title{
+    	font-size:30px;
+    }
+    .list-album__album{
+		font-size:25px;
+	}
+	.list-album__album{
+		font-size:25px;
+	}
+	.album__title {
+		width:200px;
+	}
+	.now-playing{
+		font-size:30px;
+		text-align:center;
+	}
+	.song {
+        padding:7px 0 7px 10px;
+        overflow:hidden;
+    }
+    
+    
+	.tour-dates h3{
+		font-size:30px;
+	}
+	.buy-tickets {
+    	width:150px;
+    	position: static;
+    	margin:10px auto;
+    	transform:none;
+    	text-align:center;
+	}
+	.performance{
+		text-align:center;
+	}
+	.buy-tickets a{
+		display:block;
+	}
+	.address {
+		display:block;
+    	position:relative;
+    	top: 10px;
+    	left:0;
+    	vertical-align:top;
+    	text-align:left;
+    	transform:none;
+    	font: 24px normal;
+    }
+    .day {
+        font-size: 40px;
+	}
+	.month {
+        top: 4px;
+    	font-size: 20px;
+	}
+	.year {
+        top: -6px;
+    	font-size: 20px;
+	}
+	.contact-block__subscribe{
+		font-size:30px;
+		margin-bottom:20px;
+	}
+	.container-social{
+		display:block;
+		text-align:center;
+		margin-top:20px;
+	}
+	.contact-block__title{
+		font-size:30px;
+	}
+}
+
+/*media for  max-width-499px*/
+
+@media (max-width:499px){
+	h1{
+		font-size:40px;
+	}
+	.name-member {
+        right: 5%;
+        font-size: 30px;
+    }
+    .meet-with-member__title{
+    	font-size:30px;
+    	clear:both;
+    }
+    .member-instrument{
+    	display:none;
+    }
+    .member-group {
+    	float:none;
+    	width: 100%;
+       	margin-right: 0;
+  	}
+  	.discography-img{
+  		height:auto;
+  		max-width:100%;
+  	}
+  	.discography-title{
+    	font-size:30px;
+    }
+    .list-album__album{
+		font-size:25px;
+	}
+	.list-album__album{
+		font-size:25px;
+	}
+	.album__title {
+		width:200px;
+	}
+	.container-listen-buy{
+		position:static;
+		transform:translateY(0%);
+		text-align:center;
+		padding:5px 0;
+	}
+	.now-playing{
+		font-size:30px;
+		text-align:center;
+	}
+	.song {
+         padding: 7px 45px 7px 20px;
+   }
+   .song__time{
+   		right:5px;
+   }
+   .song__name {
+    display: block;
+    vertical-align: top;
+	}
+   .fa-play {
+    	position:absolute;
+    	left:0;
+    	top:50%;
+    	transform:translateY(-50%);
+    }
+    .tour-dates h3{
+		font-size:30px;
+	}
+	.buy-tickets {
+    	width:150px;
+    	position: static;
+    	margin:10px auto;
+    	transform:none;
+    	text-align:center;
+	}
+	.performance{
+		text-align:center;
+	}
+	.buy-tickets a{
+		display:block;
+	}
+	.address {
+		display:block;
+    	position:relative;
+    	top: 10px;
+    	left:0;
+    	vertical-align:top;
+    	text-align:left;
+    	transform:none;
+    	font: 20px normal;
+    }
+    .day {
+        font-size: 20px;
+	}
+	.month {
+		display:inline-block;
+        top: 0;
+    	font-size: 20px;
+	}
+	.year {
+		display:inline-block;
+        top: 0;
+    	font-size: 20px;
+	}
+	.contact-block__subscribe{
+		font-size:30px;
+		margin-bottom:20px;
+	}
+	.container-social{
+		display:block;
+		text-align:center;
+		margin-top:20px;
+	}
+	.contact-block__title,
+	.contact-block__tel{
+		font:30px Oswald bold;;
+	}
+	.contact-block__email{
+		min-width:200px;
+		width:80%;
+		max-width:300px;
+	}
+}
+@media(max-width:290px){
+	.sound__menu{
+		display:none;
+	}
+}
+
+@media(max-width:240px){
+	.album__title{
+		display:block;
+		margin-right:0;
+	}
+	.contact-block__form{
+		margin-right:0;
+	}
+	.button--open{
+		margin-left:160px;
+	}
+}
+::-webkit-scrollbar {
+    width:5px;
+}
+::-webkit-scrollbar-thumb {
+	background-color:#999999;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color:#996666;
+}
+::-webkit-scrollbar-track{
+	background-color:#E4DFDF;
+}
+.parent__title{
+	display:none;
+	position:absolute;
+	width:10px;
+	top:-30px;
+	
+}
+.parent__title--visible{
+	display:block;
+	width:auto;
+}
