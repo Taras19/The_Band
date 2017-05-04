@@ -498,7 +498,7 @@ a.album-buy:hover {
 .address{
 	position:absolute;
 	top:50%;
-	left:125px;
+	left:140px;
 	transform:translateY(-50%);
 	border-left:5px solid #999999;
 	font:30px normal;
